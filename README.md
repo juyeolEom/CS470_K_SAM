@@ -53,4 +53,7 @@ Used train, test(=validation), result images with link listed below.<br/>
 
 ### 2. Korean Image Dataset
 
+- You can download the original dataset used in this project from here.
+- Join there, find and download **가족관계가 알려진 얼굴 이미지 데이터**.
+
 ![image](https://user-images.githubusercontent.com/71695489/205508518-011a5f5d-3d63-4fb6-8bde-1dea8a0106cd.png)
