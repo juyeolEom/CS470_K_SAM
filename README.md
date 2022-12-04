@@ -43,7 +43,10 @@ Used train, test(=validation), result images with link listed below.<br/>
 
 ## Read carefully below to fully understand what we added.
 
-### 1. Image Crop
+### 1. Environment
+- Use conda environment and install required models defined in **/environment/ksam_env.yml**.
+
+### 2. Image Crop
 ##### Image Crop for Training
 
 - You can explicitly crop your personal "Face Train Images" using **"/images/cropper.py"**
@@ -54,7 +57,7 @@ Used train, test(=validation), result images with link listed below.<br/>
 - In **/datasets/inference_dataset.py**, you can annotate or not to choose whether activate cropping or not for the inference images.
 
 
-### 2. Korean Image Dataset
+### 3. Korean Image Dataset
 
 - You can download the original dataset used in this project from here.
   [AI hub](https://aihub.or.kr/)
