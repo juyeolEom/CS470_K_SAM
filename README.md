@@ -40,6 +40,13 @@ Used train, test(=validation), result images with link listed below.<br/>
 ## Read carefully below to fully understand what we added.
 
 ### 1. Image Crop
+##### Image Crop for Training
+
+##### Image Crop for Inference
+
+- In /datasets/inference_dataset.py, you can annotate or not to activate cropping for the inference images.
+
+![image](https://user-images.githubusercontent.com/71695489/205508838-4b000496-1271-4330-baf4-3bf7d2918f1f.png)
 
 ### 2. Korean Image Dataset
 
