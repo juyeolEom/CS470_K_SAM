@@ -18,6 +18,7 @@ Base paper for this Face Aging model is written and linked below. <br/>
 <br/>
 
 The model configure and architecture is following the official github of the paper. <br/>
+**Read below for our addition first, and follows official guide below.** <br/>
  => [official link of SAM - "yuval-alaluf / SAM"](https://github.com/yuval-alaluf/SAM)
  
 <br/>
@@ -42,11 +43,13 @@ Used train, test(=validation), result images with link listed below.<br/>
 ### 1. Image Crop
 ##### Image Crop for Training
 
+- You can explicitly crop your personal "Face Train Images" using **"/images/cropper.py"**
+- You should **modify the code to fit your own datasets**.
+
 ##### Image Crop for Inference
 
-- In /datasets/inference_dataset.py, you can annotate or not to activate cropping for the inference images.
+- In **/datasets/inference_dataset.py**, you can annotate or not to choose whether activate cropping or not for the inference images.
 
-![image](https://user-images.githubusercontent.com/71695489/205508838-4b000496-1271-4330-baf4-3bf7d2918f1f.png)
 
 ### 2. Korean Image Dataset
 
