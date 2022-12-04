@@ -1,6 +1,9 @@
 # CS470_K_SAM
 
-Face Aging Model with AI_HUB's Korean face datasets.
+Hello everyone. We are team **Oldboys**, and it is our project results **K-SAM**.
+
+It is Face Aging Model with AI_HUB's Korean face datasets.
+
 All information about K-SAM is described below.
 
 ![Jang1](https://user-images.githubusercontent.com/71695489/205508296-aa60af72-7182-45d8-af4d-a8ef001bb83e.jpg)
