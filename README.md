@@ -30,7 +30,7 @@ You can download the pre-trained model used from here. <br/>
  => [Get pre-trained model here](https://github.com/yuval-alaluf/SAM#pretrained-models)
  
 <br/>
-
+In our trained model, we used 5098 images for training and 1068 images for validation. <br/>
 You also can download the pre-trained K-SAM model used for CS470 final project here. <br/>
  => [Get pre-trained K-SAM model here](https://drive.google.com/file/d/1v_ABip_aG9ZD3IMxYH4qSBQI0PfuKGQw/view?usp=share_link)
  
