@@ -51,6 +51,8 @@ Used train, test(=validation), result images with link listed below.<br/>
 
 - You can explicitly crop your personal "Face Train Images" using **"/images/cropper.py"**
 - You should **modify the code to fit your own datasets**.
+- **"/face_detection.xml"** was used for CascadeClassifier in face detection. This file was based on [**OpenCV officail github**](https://github.com/opencv/opencv/tree/master/data/haarcascades).<br/>
+
 
 ##### Image Crop for Inference
 
