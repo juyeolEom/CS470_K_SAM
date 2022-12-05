@@ -33,6 +33,9 @@ You can download the pre-trained model used from here. <br/>
 
 You also can download the pre-trained K-SAM model used for CS470 final project here. <br/>
  => [Get pre-trained K-SAM model here](https://drive.google.com/file/d/1v_ABip_aG9ZD3IMxYH4qSBQI0PfuKGQw/view?usp=share_link)
+ 
+You can compare the whole generated images by assembling with **"/results/assemble.py"**
+You should **modify the code to fit your own datasets**.
 
 <br/>
 
@@ -51,7 +54,8 @@ Used train, test(=validation), result images with link listed below.<br/>
 
 - You can explicitly crop your personal "Face Train Images" using **"/images/cropper.py"**
 - You should **modify the code to fit your own datasets**.
-- **"/face_detection.xml"** was used for CascadeClassifier in face detection. This file was based on [**OpenCV officail github**](https://github.com/opencv/opencv/tree/master/data/haarcascades).<br/>
+- **"/face_detection.xml"** was used for CascadeClassifier in face detection. 
+- This file was based on [**OpenCV officail github**](https://github.com/opencv/opencv/tree/master/data/haarcascades).<br/>
 
 
 ##### Image Crop for Inference
