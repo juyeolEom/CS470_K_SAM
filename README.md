@@ -143,6 +143,10 @@ When defining the datasets for training and inference, we will use the values de
 Please refer to `images/cropper.py` to set the appropriate path to your training image dataset.   
 Our training images are in the example form of `images/valid/0021to0040/TS0028/A/3.Age/F0028_AGE_M_59_f1.jpg`.   
 You should check the directory of both training and validation images on the variable `img_folder_path`.
+Crop all the prepared images by running the following command:
+```
+python images/cropper.py
+```
 
 ### Training SAM
 The main training script can be found in `scripts/train.py`.   
