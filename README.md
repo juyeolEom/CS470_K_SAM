@@ -49,10 +49,7 @@ Used train, test(=validation), result images with link listed below.<br/>
 
 ## Read carefully below to fully understand what we added.
 
-### 1. Environment
-- Use conda environment and install required models defined in **/environment/ksam_env.yml**.
-
-### 2. Image Crop
+### 1. Image Crop
 ##### Image Crop for Training
 
 - You can explicitly crop your personal "Face Train Images" using **"/images/cropper.py"**
@@ -66,7 +63,7 @@ Used train, test(=validation), result images with link listed below.<br/>
 - In **/datasets/inference_dataset.py**, you can annotate or not to choose whether activate cropping or not for the inference images.
 
 
-### 3. Korean Image Dataset
+### 2. Korean Image Dataset
 
 - You can download the original dataset used in this project from here.
   [AI hub](https://aihub.or.kr/)
@@ -124,8 +121,8 @@ transforms to be used for training and inference.
 We first went to `configs/paths_config.py` and define:
 ``` 
 dataset_paths = {
-    'celeba_test': '/root/SAM/images/new_valid_10',
-    'ffhq': '/root/SAM/images/new_train',
+    'celeba_test': 'images/new_valid_10',
+    'ffhq': 'images/new_train',
 }
 ```
 Then, in `configs/data_configs.py`, we define:
@@ -152,7 +149,7 @@ Training SAM with the settings used in the paper can be done by running the foll
 ```
 python scripts/train.py \
 --dataset_type=ffhq_aging \
---exp_dir=/root/SAM/results/new_train \
+--exp_dir=results/new_train \
 --workers=6 \
 --batch_size=6 \
 --test_batch_size=6 \
@@ -175,29 +172,25 @@ python scripts/train.py \
 --use_weighted_id_loss
 ```
 
-### Additional Notes
-- See `options/train_options.py` for all training-specific flags. 
-- Note that using the flag `--start_from_encoded_w_plus` requires you to specify the path to the pretrained pSp encoder.  
-    By default, this path is taken from `configs.paths_config.model_paths['pretrained_psp']`.
-- If you wish to resume from a specific checkpoint (e.g. a pretrained SAM model), you may do so using `--checkpoint_path`.
-
 ## Testing
 ### Inference
 Having trained your model or if you're using a pretrained SAM model, you can use `scripts/inference.py` to run inference
 on a set of images.   
 We used the best model which is the result of 18000th iteration.
-We put images for testing in `/root/SAM/images/members`.
+We put images for testing in `images/members`.
 
 ```
 python scripts/inference.py \
---exp_dir=/root/SAM/results/k_crop_member \
---checkpoint_path=/root/SAM/results/new_train/checkpoints/iteration_18000.pt \
---data_path=/root/SAM/images/members \
+--exp_dir=results/k_crop_member \
+--checkpoint_path=results/new_train/checkpoints/iteration_18000.pt \
+--data_path=images/members \
 --test_batch_size=4 \
 --test_workers=4 \
 --couple_outputs
 --target_age=0,10,20,30,40,50,60,70,80
 ```
+
+You can compare these results with the original pretrained checkpoint in `/root/SAM/pretrained_models/sam_ffhq_aging.pt`.
 
 ## Credits
 **StyleGAN2 model and implementation:**  
